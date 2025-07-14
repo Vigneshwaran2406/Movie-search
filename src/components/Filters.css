@@ -1,0 +1,41 @@
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: center;
+  gap: 25px; /* Increased gap */
+  margin-bottom: 40px; /* More space below filters */
+  padding: 20px 30px;
+  background: rgba(45, 55, 72, 0.6); /* Slightly transparent dark background */
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px); /* Subtle blur effect */
+}
+
+.filter-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #cbd5e0; /* Lighter label text */
+  font-weight: 500;
+  text-align: left;
+}
+
+.filter-input {
+  padding: 8px 12px;
+  border: 1px solid #4a5568;
+  border-radius: 8px;
+  background: #2d3748;
+  color: #e2e8f0;
+  outline: none;
+  width: 120px; /* Slightly wider inputs */
+  font-size: 1rem;
+  margin-top: 5px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-input:focus {
+  border-color: #38b2ac;
+  box-shadow: 0 0 0 2px rgba(56, 178, 172, 0.3);
+}
